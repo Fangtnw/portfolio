@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanawat Somkanae - Robotics Engineer</title>
+    <meta name="description" content="Robotics Engineer specializing in ROS2, SLAM, and autonomous systems">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <a href="#hero" class="nav-logo">TS</a>
+                <ul class="nav-menu">
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <button class="nav-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Thanawat Somkanae</h1>
+                    <p class="hero-subtitle">Robotics Engineer</p>
+                    <p class="hero-tagline">Building intelligent autonomous systems with ROS2, SLAM, and collaborative robotics</p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <h3 class="project-title">Development of Heterogeneous AMR Collaboration</h3>
+                        <p class="project-summary">Integrating Ackermann and Holonomic Drives for Collaborative Transportation</p>
+                        <div class="project-details">
+                            <div class="project-section">
+                                <h4>Problem</h4>
+                                <p>Coordinating different robot types with varying kinematics for efficient collaborative transport tasks.</p>
+                            </div>
+                            <div class="project-section">
+                                <h4>Approach</h4>
+                                <p>Developed a coordination framework that accounts for different drive types while maintaining synchronized movement.</p>
+                            </div>
+                            <div class="project-section">
+                                <h4>Outcome</h4>
+                                <p>Successfully demonstrated collaborative transportation with heterogeneous robot teams in simulated environments.</p>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-chip">ROS2</span>
+                            <span class="tech-chip">Gazebo</span>
+                            <span class="tech-chip">C++</span>
+                            <span class="tech-chip">Python</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">GitHub</a>
+                            <a href="#" class="project-link">Demo</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <h3 class="project-title">Flapping-Wing Robot with Optical Flow Avoidance</h3>
+                        <p class="project-summary">Bio-inspired robot with vision-based obstacle avoidance system</p>
+                        <div class="project-details">
+                            <div class="project-section">
+                                <h4>Problem</h4>
+                                <p>Enabling autonomous navigation for flapping-wing robots in cluttered environments without complex sensors.</p>
+                            </div>
+                            <div class="project-section">
+                                <h4>Approach</h4>
+                                <p>Implemented optical flow algorithms using onboard cameras for real-time obstacle detection and avoidance.</p>
+                            </div>
+                            <div class="project-section">
+                                <h4>Outcome</h4>
+                                <p>Successfully demonstrated autonomous flight through obstacle courses using only visual feedback.</p>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-chip">OpenCV</span>
+                            <span class="tech-chip">Python</span>
+                            <span class="tech-chip">Embedded C</span>
+                            <span class="tech-chip">Computer Vision</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">GitHub</a>
+                            <a href="#" class="project-link">Paper</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <h3 class="project-title">Gazebo Simulation Game for IDC Robocon 2023</h3>
+                        <p class="project-summary">Obodroid Internship - Competition simulation environment</p>
+                        <div class="project-details">
+                            <div class="project-section">
+                                <h4>Problem</h4>
+                                <p>Creating a realistic simulation environment for Robocon competition strategy development and testing.</p>
+                            </div>
+                            <div class="project-section">
+                                <h4>Approach</h4>
+                                <p>Built comprehensive Gazebo world with accurate physics, robot models, and competition task simulation.</p>
+                            </div>
+                            <div class="project-section">
+                                <h4>Outcome</h4>
+                                <p>Delivered complete simulation framework used by the team for strategy development and algorithm testing.</p>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-chip">Gazebo</span>
+                            <span class="tech-chip">ROS2</span>
+                            <span class="tech-chip">Python</span>
+                            <span class="tech-chip">URDF</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">GitHub</a>
+                            <a href="#" class="project-link">Video</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <h3 class="project-title">MicroROS Pi5 Robot with ORB-SLAM3</h3>
+                        <p class="project-summary">Emden Internship - Autonomous navigation system</p>
+                        <div class="project-details">
+                            <div class="project-section">
+                                <h4>Problem</h4>
+                                <p>Implementing real-time SLAM on resource-constrained embedded systems for autonomous navigation.</p>
+                            </div>
+                            <div class="project-section">
+                                <h4>Approach</h4>
+                                <p>Integrated ORB-SLAM3 with microROS on Raspberry Pi 5, optimizing performance for embedded deployment.</p>
+                            </div>
+                            <div class="project-section">
+                                <h4>Outcome</h4>
+                                <p>Achieved robust real-time SLAM performance with accurate mapping and localization capabilities.</p>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-chip">microROS</span>
+                            <span class="tech-chip">ORB-SLAM3</span>
+                            <span class="tech-chip">Raspberry Pi</span>
+                            <span class="tech-chip">C++</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">GitHub</a>
+                            <a href="#" class="project-link">Demo</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="experience">
+            <div class="container">
+                <h2 class="section-title">Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Nikon Thailand</h3>
+                            <p class="timeline-period">Robotics Engineer</p>
+                            <p class="timeline-description">Developed automation solutions for manufacturing processes and implemented vision-based quality control systems.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Obodroid</h3>
+                            <p class="timeline-period">Robotics Intern</p>
+                            <p class="timeline-description">Created simulation environments for Robocon competitions and developed autonomous navigation algorithms.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Emden</h3>
+                            <p class="timeline-period">Robotics Intern</p>
+                            <p class="timeline-description">Implemented SLAM systems on embedded platforms and worked on microROS integration for autonomous robots.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Robotics & AI</h3>
+                        <div class="skill-list">
+                            <span class="skill-item">ROS2</span>
+                            <span class="skill-item">SLAM</span>
+                            <span class="skill-item">Gazebo</span>
+                            <span class="skill-item">microROS</span>
+                            <span class="skill-item">ORB-SLAM3</span>
+                            <span class="skill-item">Computer Vision</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Programming</h3>
+                        <div class="skill-list">
+                            <span class="skill-item">C++</span>
+                            <span class="skill-item">Python</span>
+                            <span class="skill-item">Embedded C</span>
+                            <span class="skill-item">Bash</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Tools & Technologies</h3>
+                        <div class="skill-list">
+                            <span class="skill-item">Docker</span>
+                            <span class="skill-item">OpenCV</span>
+                            <span class="skill-item">Git</span>
+                            <span class="skill-item">Linux</span>
+                            <span class="skill-item">Raspberry Pi</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Get in Touch</h2>
+                <div class="contact-content">
+                    <p class="contact-description">I'm always interested in discussing robotics opportunities, collaborations, or exciting projects.</p>
+                    <div class="contact-links">
+                        <a href="mailto:thanawat.email@example.com" class="contact-link">
+                            <span class="contact-icon">📧</span>
+                            <span>Email</span>
+                        </a>
+                        <a href="https://github.com/thanawat" class="contact-link">
+                            <span class="contact-icon">💻</span>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://linkedin.com/in/thanawat" class="contact-link">
+                            <span class="contact-icon">💼</span>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="#" class="contact-link">
+                            <span class="contact-icon">📄</span>
+                            <span>Resume</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Thanawat Somkanae. Built with passion for robotics.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
