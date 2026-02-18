@@ -228,16 +228,19 @@ section {
     overflow: hidden;
     border-radius: 0.5rem;
     margin-bottom: 1.5rem;
-    background: var(--bg-tertiary);
+    background: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid var(--border-color);
 }
 
 .project-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
     transition: transform 0.3s ease;
 }
 
@@ -252,16 +255,19 @@ section {
     overflow: hidden;
     border-radius: 0.5rem;
     margin-bottom: 1rem;
-    background: var(--bg-tertiary);
+    background: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid var(--border-color);
 }
 
 .timeline-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
     transition: transform 0.3s ease;
 }
 
@@ -443,7 +449,21 @@ section {
 .timeline-period {
     color: var(--accent-primary);
     font-weight: 500;
+    margin-bottom: 0.25rem;
+}
+
+.timeline-date {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+    font-weight: 500;
+}
+
+.timeline-location {
+    color: var(--text-tertiary);
+    font-size: 0.85rem;
     margin-bottom: 0.75rem;
+    font-style: italic;
 }
 
 .timeline-description {
@@ -507,6 +527,49 @@ section {
     transform: translateY(-2px);
 }
 
+/* Education Section */
+.education {
+    background: var(--bg-primary);
+}
+
+.education-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+}
+
+.education-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.education-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--accent-primary);
+}
+
+.education-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.education-degree {
+    color: var(--accent-primary);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.education-details {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
 /* Contact Section */
 .contact {
     background: var(--bg-primary);
@@ -552,8 +615,15 @@ section {
     box-shadow: var(--shadow-lg);
 }
 
-.contact-icon {
-    font-size: 1.25rem;
+.contact-icon-img {
+    width: 16px;
+    height: 16px;
+    filter: none;
+    transition: filter 0.3s ease;
+}
+
+.contact-link:hover .contact-icon-img {
+    filter: brightness(0) invert(1);
 }
 
 /* Footer */
@@ -593,6 +663,10 @@ section {
     
     .skills-grid {
         grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .education-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
     
     .timeline::before {
